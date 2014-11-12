@@ -1,0 +1,32 @@
+# documentation
+/.yardoc
+/_yardoc/
+/doc/
+
+# temp files
+/tmp/
+*.so
+*.o
+*.a
+mkmf.log
+
+# test files
+/coverage/
+/spec/reports/
+
+# OSX files
+.DS_Store
+
+# bundler files
+/pkg/
+/.bundle/
+/Gemfile.lock
+*.bundle
+
+# dummy app files
+log/*.log
+spec/dummy/db/*.sqlite3
+spec/dummy/db/*.sqlite3-journal
+spec/dummy/log/*.log
+spec/dummy/tmp/
+spec/dummy/.sass-cache
