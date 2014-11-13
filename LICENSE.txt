@@ -1,4 +1,4 @@
-Copyright (c) 2014 Ryan Sonnek
+Copyright (c) 2014 The Garage
 
 MIT License
 

@@ -25,14 +25,14 @@ Update application.html.erb layout to include necessary javascript:
 ## Usage
 
 #### Setup experiment in Google Analytics
-1. configure each variation with a different `gace_var` parameter value.
+Configure each variation with a different `gace_var` parameter value.
 
 example:
 * control: `http://mysite.com/signup`
 * variation one: `http://mysite.com/signup?gace_var=expensive`
 * variation two: `http://mysite.com/signup?gace_var=cheap`
 
-2. Record the newly created experiment ID.
+Make sure to record the newly created experiment ID.
 
 
 #### Configure the experiment within Rails
@@ -44,14 +44,13 @@ class UsersController < ApplicationController
 end
 ```
 
-#### Create experiment variation views
+#### Create views for experiment variations
 
-Any views within these directories will be used for your experiment
-
-app/experiments/test_pricing/expensive
-
-app/experiments/test_pricing/cheap
-
+1. Create a directory for the experiment: `app/experiments/EXPERIMENT_NAME` (ex: app/experiments/test_pricing)
+2. Create a directory for each experiment variation.  The directory name **must match** the `gace_var` parameter
+   used when setting up the experiment in Google Analytics.  (ex: `app/experiments/test_pricing/expensive` and `app/experiments/test_pricing/cheap`)
+3. Create any views/partials to be used for that variation.  Each directory should mirror structure used by app/views and will override
+   the default views if one exists.  (ex: `app/experiments/test_pricing/expensive/users/show.html.erb`)
 
 ## Contributing
 
