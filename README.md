@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/thegarage/gace.svg?branch=master)](https://travis-ci.org/thegarage/gace)
+
 # GACE
 > Google Analytics Content Experiments + Rails = AWESOME
 
