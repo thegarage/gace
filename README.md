@@ -9,8 +9,8 @@ Add this line to your application's Gemfile:
 gem 'gace'
 ```
 
-Update application.html.erb layout to include necessary javascript.
-Make sure to include the javascript at the very top of your head (per Google Analytics installation instructions).
+Update your view layout to include the necessary javascript.
+**Make sure to include the javascript at the very top of your head element** (per Google Analytics installation instructions).
 
 ```html
 <<!DOCTYPE html>
